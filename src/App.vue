@@ -8,6 +8,8 @@
 
 <script type="text/javascript">
   //let data = "";
+  let x = document.cookie;
+  console.info(x);
   export default {
     data() {
       return {
@@ -17,7 +19,7 @@
     methods: {
       getData() {
         // get请求
-        this.$axios.get("http://127.0.0.1:8082/reconcile/hello").then(res => {
+        this.$axios.get("/api/reconcile/hello").then(res => {
           alert("请求成功，response=" + res.data);
           // data = res.data;
           console.log(res.data);
