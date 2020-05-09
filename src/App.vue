@@ -19,7 +19,7 @@
     methods: {
       getData() {
         // get请求
-        this.$axios.get("/nflow_manager_war/a/reconcile/hello1").then(res => {
+        this.$axios.get("/nflow_manager_war/a/forward/default/").then(res => {
           alert("请求成功，response=" + res.data);
           // data = res.data;
           console.log(res.data);
